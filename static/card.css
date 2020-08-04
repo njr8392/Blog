@@ -1,0 +1,9 @@
+.card-space{
+    margin: 0 auto;
+    display: inline;
+    padding-top: 5em;
+    background-color: black;
+}
+body{
+    background-color: red;
+}

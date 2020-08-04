@@ -1,0 +1,13 @@
+{{template "header"}}
+    <h1>Edit post</h1>
+    <form action="/blog/edit/process" method="POST">
+        <div>
+    <input type="text" name ="user" value="{{.User}}">
+    <input type="text" name ="data" value="{{.Data}}">
+    <input type="text" name = "id" value = "{{.Id}}"readonly>
+</div>
+    <!-- need to add the id so i can add it to the post route -->
+    <input type="submit">
+</form>
+</body>
+</html>

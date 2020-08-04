@@ -1,0 +1,20 @@
+{{template "header"}}
+<div class="container vertical-center">
+    <h2>Blog Posts</h2>
+    {{range .}}
+    <div class="row card-space">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{.User}}</h5>
+              <p class="card-text">{{.Data}}</p>
+              <a href="/blog/edit/?id={{.Id}}" class="btn btn-primary">Edit</a>
+              <a href="/blog/delete/process/?id={{.Id}}" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+    </div>
+        {{end}}
+</div> 
+</body>
+</html>
